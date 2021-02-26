@@ -1,0 +1,136 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.easeinout a{
+    transition: ease-in-out color .25s;
+}
+
+#CompanyLogo{
+    margin:0;
+    padding: 10px;
+    padding-top: 18px;
+    border-radius: 20px;
+}
+
+mark.darkorange, mark.blueUwU{
+    background: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.darkorange{
+    color: darkorange;
+}
+
+.darkorchid{
+    color: darkorchid;
+}
+
+.deeppink{
+    color: deeppink;
+}
+
+.forestgreen{
+    color: forestgreen;
+}
+
+.darkorange-hover:hover, .darkorange-hover:hover *{
+    background-color: darkorange;
+    background-image: none;
+    color: white;
+    transition: ease-in-out color .50s;
+}
+.darkorchid-hover:hover, .darkorchid-hover:hover *{
+    background-color: darkorchid;
+    background-image: none;
+    color: white;
+    transition: ease-in-out color .50s;
+}
+.deeppink-hover:hover, .deeppink-hover:hover *{
+    background-color: deeppink;
+    background-image: none;
+    color: white;
+    transition: ease-in-out color .50s;
+}
+.forestgreen-hover:hover, .forestgreen-hover:hover *{
+    background-color: forestgreen;
+    background-image: none;
+    color: white;
+    transition: ease-in-out color .50s;
+}
+
+.blueUwU{
+    color: #2e5f85;
+}
+
+.img-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-position: center;
+}
+
+.hotels-img{
+    background-image: url(img/hotels.jpg);
+}
+.flights-img{
+    background-image: url(img/flights.jpg);
+}
+.trains-img{
+    background-image: url(img/trains.jpg);
+}
+.bus-img{
+    background-image: url(img/bus.jpg);
+}
+
+div#SearchBox{
+    border-radius: 5em;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 2px #000000;
+}
+
+div.overlay {
+    opacity: .5;
+    background-color: black;
+    position: absolute;
+    left: 0; top: 0; 
+    height: 100%; 
+    width: 100%;
+}
+@media(min-width: 768px) {
+    .desktop-only-border{
+        border: 1px white solid;
+    }
+    #form-container{
+        width: 75%;
+    }
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    min-width: 100%;
+    height: 32rem;
+}
+@media(max-width: 768px) {
+    .carousel-item > img {
+        left: -50%;
+    }
+}
